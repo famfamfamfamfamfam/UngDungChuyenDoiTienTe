@@ -1,14 +1,15 @@
 ﻿using System;
-namespace HIENTHILOICHAO
+namespace CHUYENDOITIENTE
 {
-    class LoiChaoTheoTen
+    class DoiTuUSDsangVND
     {
         static void Main(string[] args)
         {
-            string tennguoidung;
-            Console.WriteLine("Nhap ten cua ban:");
-            tennguoidung = Console.ReadLine();
-            Console.WriteLine("Xin chao, {0}!", tennguoidung);
+            int rate = 23000;
+            float usd;
+            Console.Write("$");
+            usd = float.Parse(Console.ReadLine());
+            Console.WriteLine("{0} USD = {1} VND", usd, usd*rate);
         }
     }
 }
